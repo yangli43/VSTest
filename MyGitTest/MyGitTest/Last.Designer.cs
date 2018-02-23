@@ -28,35 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
-            // textEdit1
+            // labelControl1
             // 
-            this.textEdit1.EditValue = "Hello word!";
-            this.textEdit1.Location = new System.Drawing.Point(89, 120);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 45F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(330, 78);
-            this.textEdit1.TabIndex = 0;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 45F);
+            this.labelControl1.Location = new System.Drawing.Point(118, 120);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(306, 72);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Hello word!";
             // 
             // Last
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 334);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.labelControl1);
             this.Name = "Last";
             this.Text = "Last";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }
