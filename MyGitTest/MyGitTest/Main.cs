@@ -18,11 +18,36 @@ namespace MyGitTest
 
         private void BtnYes_Click(object sender, EventArgs e)
         {
+            if (txtName.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入姓名！");
+                return;
+            }
+            if (txtPwd.Text.Trim() == "")
+            {
+                MessageBox.Show("请输入密码！");
+                return;
+            }
+            if (txtName.Text.Trim() == "张三" && txtPwd.Text.Trim() == "123456")
+            {
+                Last l = new Last();
+                this.Hide();
+                l.ShowDialog();
+               
+            }
+            else
+            {
+                MessageBox.Show("用户名或密码错误！");
+            }
+            
 
         }
 
         private void BtnNo_Click(object sender, EventArgs e)
         {
+            txtName.Text = "";
+            txtName.Focus();
+            txtPwd.Text = "";
 
         }
     }
