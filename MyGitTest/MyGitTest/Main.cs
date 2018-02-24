@@ -37,7 +37,7 @@ namespace MyGitTest
             }
             else
             {
-                MessageBox.Show("用户名或密码错误！");
+                MessageBox.Show("请重新输入用户名或密码！");
             }
             
 
